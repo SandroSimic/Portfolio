@@ -1,0 +1,117 @@
+.contactMe {
+  height: 100vh;
+  padding: 5rem;
+  display: flex;
+  justify-content: space-between;
+
+  @media only screen and (max-width: $bp-medium) {
+    flex-direction: column;
+    gap: 10rem;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    gap: 5rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      align-items: center;
+    }
+
+    &__heading {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+
+      @media only screen and (max-width: $bp-medium) {
+        text-align: center;
+      }
+
+      & h1 {
+        font-size: 4rem;
+        & span {
+          color: var(--color-primary);
+        }
+      }
+
+      & p {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  &__contact {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    &__image {
+      height: 10rem;
+      width: 10rem;
+      & img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        border-radius: 50rem;
+      }
+    }
+
+    &__email {
+      & h2 {
+        font-size: 2rem;
+      }
+
+      & p {
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-primary-darker);
+    width: 100%;
+    border-radius: 1rem;
+    padding: 5rem;
+    gap: 3rem;
+  }
+
+  &__input {
+    display: flex;
+    flex-direction: column;
+    & label {
+      font-size: 3rem;
+      color: var(--color-secondary);
+      font-weight: bold;
+    }
+    & input {
+      height: 5rem;
+      padding: 1rem;
+      font-size: 1.7rem;
+      font-family: "Poppins";
+    }
+
+    & textarea {
+      height: 30rem;
+      resize: none;
+      padding: 1rem;
+      font-size: 1.7rem;
+      font-family: "Poppins";
+    }
+  }
+
+  &__btn {
+    align-self: baseline;
+    padding: 1.5rem 6rem;
+    background-color: var(--color-secondary);
+    font-size: 3rem;
+    color: white;
+    border: none;
+
+    &:hover {
+      background-color: var(--color-primary);
+    }
+  }
+}

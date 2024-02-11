@@ -1,0 +1,106 @@
+.aboutMe {
+  height: 100vh;
+  background-color: var(--color-primary-darker);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  &__image {
+    width: 55rem;
+    height: 55rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 30rem;
+      height: 30rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      width: 15rem;
+      height: 15rem;
+    }
+
+    & img {
+      border-radius: 50rem;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    color: var(--color-white);
+
+    @media only screen and (max-width: $bp-medium) {
+      padding: 3rem;
+    }
+  }
+
+  &__title {
+    & h1 {
+      font-size: 4rem;
+      color: var(--color-white);
+
+      @media only screen and (max-width: $bp-smallest) {
+        font-size: 3rem;
+      }
+    }
+
+    & span {
+      font-size: 2rem;
+      color: var(--color-secondary);
+
+      @media only screen and (max-width: $bp-smallest) {
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+  &__description {
+    font-size: 1.6rem;
+    color: var(--color-white);
+  }
+
+  &__skills {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    & h3 {
+      font-size: 2rem;
+    }
+
+    &__skill {
+      display: flex;
+      gap: 3rem;
+
+      @media only screen and (max-width: $bp-medium) {
+        flex-wrap: wrap;
+      }
+    }
+  }
+
+  &__btn {
+    align-self: baseline;
+    padding: 1.5rem 3rem;
+    background-color: var(--color-secondary);
+    border: 0;
+    outline: 0;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--color-white);
+
+
+
+    &:hover {
+      background-color: var(--color-primary);
+    }
+  }
+}

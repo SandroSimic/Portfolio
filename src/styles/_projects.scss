@@ -1,0 +1,116 @@
+.projects {
+  background-color: var(--color-primary-darker);
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+
+  &__projectList {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      gap: 10rem;
+    }
+  }
+
+  &__heading {
+    text-align: center;
+
+    & h1 {
+      font-size: 4rem;
+      color: var(--color-white);
+    }
+
+    & p {
+      color: grey;
+      font-size: 1.3rem;
+      & span {
+        color: yellow;
+      }
+    }
+  }
+
+  &__project {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    width: 100%;
+
+    @media only screen and (max-width: $bp-medium) {
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    &__image {
+      width: 65rem;
+      height: 40rem;
+
+      @media only screen and (max-width: $bp-medium) {
+        width: 40rem;
+        height: 30rem;
+      }
+
+      & img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      color: white;
+    }
+
+    &__title {
+      display: flex;
+      justify-content: space-between;
+
+      & h1 {
+        font-size: 3rem;
+        font-weight: 400;
+      }
+    }
+
+    &__actions {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+
+      & a {
+        font-size: 3rem;
+        text-decoration: none;
+        color: white;
+
+        &:hover {
+          color: var(--color-primary);
+        }
+      }
+    }
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+    }
+
+    &__desc {
+      margin-top: 3rem;
+      font-size: 2rem;
+    }
+
+    &__accounts {
+      & span {
+        color: yellow;
+        font-size: 2rem;
+      }
+
+      font-size: 1.3rem;
+    }
+  }
+}

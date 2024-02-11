@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+:root {
+  --color-primary: #603cee;
+  --color-primary-darker: #2e2847;
+  --color-white: white;
+  --color-secondary: #957fef;
+  --color-grey-light: #d1d1d1;
+  --color-grey: #858585;
+  --color-black: #323232;
+}
+
+$bp-full: 100em; // 1600px
+$bp-largest: 75em; // 1200px
+$bp-largest: 75em; // 1200px
+$bp-large: 68.75em; // 1100px
+$bp-medium: 56.25em; // 900px
+$bp-small: 37.5em; // 600px
+$bp-smallest: 31.25em; // 500px
+
+* {
+  margin: 0;
+  padding: 0;
+  cursor: none;
+  scroll-behavior: smooth;
+  @media only screen and (max-width: $bp-medium) {
+    cursor: default;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 50%;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    font-size: 45%;
+  }
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
