@@ -2,6 +2,7 @@ import React from "react";
 import employify from "../images/employify.png";
 import rently from "../images/rently.png";
 import finsy from "../images/finsy.png";
+import dentala from "../images/dentala.png";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 const ProjectsPage = ({ setCursorVariant }) => {
@@ -155,6 +156,52 @@ const ProjectsPage = ({ setCursorVariant }) => {
                 <br /> The main goal for this project was to create a visually
                 pleasing <br />
                 website.
+                <br /> So this website does not have any functionality meaning
+                <br />
+                buttons don't work and It's not connected to any API or server
+                <br />
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="projects__project">
+          <div className="projects__project__image">
+            <img src={dentala} />
+          </div>
+          <div className="projects__project__info">
+            <div className="projects__project__title">
+              <h1>Dentala</h1>
+              <div className="projects__project__actions">
+                <div>
+                  <a
+                    href="https://dentala-e48t.onrender.com/"
+                    target="__blank"
+                    onMouseEnter={smallCircle}
+                    onMouseLeave={leave}
+                  >
+                    <FaExternalLinkAlt />
+                  </a>
+                </div>
+                <div>
+                  <a
+                    onMouseEnter={smallCircle}
+                    onMouseLeave={leave}
+                    href="https://github.com/SandroSimic/Dentala"
+                    target="__blank"
+                  >
+                    <FaGithub />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="projects__project__text">
+              <p className="projects__project__desc">
+                Landing Page for Dental Care made with <br />
+                typescript react and tailwindcss.
+                <br /> The main goal for this project was to create a visually
+                pleasing <br />
+                website, and practice with typescript and tailwind.
                 <br /> So this website does not have any functionality meaning
                 <br />
                 buttons don't work and It's not connected to any API or server
